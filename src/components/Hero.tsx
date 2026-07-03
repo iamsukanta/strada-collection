@@ -49,9 +49,9 @@ export default function Hero() {
               variants={lineReveal}
               initial="hidden"
               animate="visible"
-              className="block text-[clamp(3.75rem,14vw,11.5rem)]"
+              className="block text-[clamp(2.5rem,12vw,10.5rem)]"
             >
-              Strada_
+              Strada
             </motion.span>
           </span>
           <span className="block overflow-hidden pb-[0.08em]">
@@ -60,7 +60,7 @@ export default function Hero() {
               variants={lineReveal}
               initial="hidden"
               animate="visible"
-              className="relative block text-[clamp(3.75rem,14vw,11.5rem)]"
+              className="relative block text-[clamp(2.5rem,12vw,10.5rem)]"
             >
               Collection50
               {/* Signature underline, drawn after the headline settles */}
@@ -98,16 +98,6 @@ export default function Hero() {
           </a>
         </motion.div>
       </div>
-
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.5 }}
-        className="eyebrow absolute bottom-8 left-6 text-smoke lg:left-8"
-        aria-hidden="true"
-      >
-        Scroll
-      </motion.p>
     </section>
   );
 }

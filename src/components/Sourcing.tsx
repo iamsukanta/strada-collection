@@ -13,7 +13,7 @@ const BLOCKS = [
   {
     index: "02",
     title: "Quality",
-    body: "Quality is the foundation of Strada_Collection50. We do not focus on low-cost or low-quality products. Every item is chosen based on material quality, craftsmanship, durability, comfort, and overall appearance. Premium quality builds trust — and trust is the most valuable part of every customer relationship.",
+    body: "Quality is the foundation of Strada Collection. We do not focus on low-cost or low-quality products. Every item is chosen based on material quality, craftsmanship, durability, comfort, and overall appearance. Premium quality builds trust — and trust is the most valuable part of every customer relationship.",
   },
 ];
 
@@ -31,11 +31,7 @@ export default function Sourcing() {
           className="mt-16 grid gap-12 md:grid-cols-2 md:gap-16"
         >
           {BLOCKS.map((block) => (
-            <motion.article
-              key={block.index}
-              variants={fadeUp}
-              className="border-t-2 border-ink pt-8"
-            >
+            <motion.article key={block.index} variants={fadeUp}>
               <p className="eyebrow text-smoke">{block.index}</p>
               <h3 className="mt-4 font-display text-2xl uppercase tracking-wide text-ink sm:text-3xl">
                 {block.title}

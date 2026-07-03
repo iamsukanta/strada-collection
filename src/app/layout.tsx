@@ -18,14 +18,14 @@ const archivo = Archivo({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://strada-collection50.vercel.app"),
-  title: "Strada_Collection50 — Premium Fashion & Lifestyle",
+  title: "Strada Collection50 — Premium Fashion & Lifestyle",
   description:
-    "Strada_Collection50 was founded in 2026 by two founders based in Germany. We provide premium products at competitive prices while maintaining the highest standards of quality, professionalism, and customer satisfaction.",
+    "Strada Collection was founded in 2026 by two founders based in Germany. We provide premium products at competitive prices while maintaining the highest standards of quality, professionalism, and customer satisfaction.",
   icons: {
     icon: "/logo.png",
   },
   openGraph: {
-    title: "Strada_Collection50 — Premium Fashion & Lifestyle",
+    title: "Strada Collection50 — Premium Fashion & Lifestyle",
     description:
       "Premium products. Fair prices. Founded in Germany, 2026. Clothing, watches, fashion accessories and premium lifestyle products — carefully sourced from trusted partners in Italy and France.",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 815,
         height: 780,
-        alt: "Strada_Collection50 logo",
+        alt: "Strada Collection50 logo",
       },
     ],
   },

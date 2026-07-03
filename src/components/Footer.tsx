@@ -13,12 +13,12 @@ export default function Footer() {
         <div className="flex items-center gap-6">
           <Image
             src="/logo.png"
-            alt="Strada_Collection50"
+            alt="Strada Collection"
             width={815}
             height={780}
-            className="h-14 w-auto"
+            className="h-20 w-auto"
           />
-          <p className="eyebrow text-smoke">© 2026 Strada_Collection50</p>
+          <p className="eyebrow text-smoke">© 2026 Strada Collection</p>
         </div>
 
         <ul className="flex flex-col gap-4 sm:flex-row sm:gap-10">

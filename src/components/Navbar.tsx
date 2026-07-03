@@ -44,18 +44,18 @@ export default function Navbar() {
       >
         <a
           href="#top"
-          aria-label="Strada_Collection50 — back to top"
+          aria-label="Strada Collection — back to top"
           className={`relative z-50 transition-opacity duration-300 ${
             open ? "pointer-events-none opacity-0" : "opacity-100"
           }`}
         >
           <Image
             src="/logo.png"
-            alt="Strada_Collection50"
+            alt="Strada Collection"
             width={815}
             height={780}
             priority
-            className="h-12 w-auto"
+            className="h-14 w-auto"
           />
         </a>
 

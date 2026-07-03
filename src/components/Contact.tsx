@@ -66,7 +66,7 @@ export default function Contact() {
           viewport={{ once: true, amount: 0.5 }}
           className="mt-16 max-w-2xl text-base leading-relaxed text-ash"
         >
-          Thank you for placing your trust in Strada_Collection50. Your
+          Thank you for placing your trust in Strada Collection. Your
           satisfaction is our highest priority.
         </motion.p>
       </div>

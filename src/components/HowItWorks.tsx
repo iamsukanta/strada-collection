@@ -32,7 +32,7 @@ const STEPS = [
   },
   {
     title: "Enjoy Your Purchase",
-    body: "Thank you for choosing Strada_Collection50. We look forward to serving you again.",
+    body: "Thank you for choosing Strada Collection. We look forward to serving you again.",
   },
 ];
 
