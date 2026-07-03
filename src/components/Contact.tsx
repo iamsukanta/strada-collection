@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import { fadeUp, stagger } from "./motion";
@@ -21,8 +22,23 @@ const CHANNELS = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-ink px-6 py-24 text-paper sm:py-32 lg:px-8">
-      <div className="mx-auto max-w-6xl">
+    <section
+      id="contact"
+      className="relative overflow-hidden bg-ink px-6 py-24 text-paper sm:py-32 lg:px-8"
+    >
+      {/* Faint editorial backdrop behind the dark overlay */}
+      <div aria-hidden="true" className="absolute inset-0">
+        <Image
+          src="/images/detail.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-[50%_25%] opacity-25 grayscale"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/75 to-ink" />
+      </div>
+
+      <div className="relative mx-auto max-w-6xl">
         <SectionHeading eyebrow="Contact" title="Get in Touch" dark />
 
         <motion.div

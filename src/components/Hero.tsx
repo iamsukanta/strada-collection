@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { EASE } from "./motion";
 
@@ -20,16 +21,31 @@ export default function Hero() {
       id="top"
       className="relative flex min-h-svh flex-col justify-center overflow-hidden bg-ink px-6 text-paper lg:px-8"
     >
+      {/* Editorial backdrop: urban fashion shot, held to the monochrome palette */}
+      <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
+        <motion.div
+          initial={{ scale: 1.07 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.8, ease: EASE }}
+          className="relative h-full w-full"
+        >
+          <Image
+            src="/images/hero.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[50%_32%] opacity-50 grayscale"
+          />
+        </motion.div>
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/40" />
+      </div>
       {/* Subtle grain, echoing the urban texture of the logo artwork */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-[0.07]"
         style={{ backgroundImage: GRAIN }}
-      />
-      {/* Soft grey glow so the black doesn't read flat */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_38%,rgba(250,250,250,0.06),transparent_70%)]"
       />
 
       <div className="relative mx-auto w-full max-w-6xl pt-20">
