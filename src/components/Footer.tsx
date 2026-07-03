@@ -21,23 +21,54 @@ export default function Footer() {
           <p className="eyebrow text-smoke">© 2026 Strada Collection</p>
         </div>
 
-        <ul className="flex flex-col gap-4 sm:flex-row sm:gap-10">
+        <ul className="flex flex-col gap-3 sm:flex-row sm:gap-8">
           <li>
             <a
               href="https://instagram.com/strada_collection50"
               target="_blank"
               rel="noopener noreferrer"
-              className="link-underline eyebrow text-ash transition-colors duration-300 hover:text-paper"
+              className="group flex items-center gap-2.5 text-ash transition-colors duration-300 hover:text-paper"
             >
-              @strada_collection50
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.2" cy="6.8" r="0.5" fill="currentColor" />
+              </svg>
+              <span className="link-underline text-[0.625rem] font-semibold uppercase tracking-[0.2em]">
+                @strada_collection50
+              </span>
             </a>
           </li>
           <li>
             <a
               href="mailto:strada.collection50@gmail.com"
-              className="link-underline eyebrow text-ash transition-colors duration-300 hover:text-paper"
+              className="group flex items-center gap-2.5 text-ash transition-colors duration-300 hover:text-paper"
             >
-              strada.collection50@gmail.com
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4"
+                aria-hidden="true"
+              >
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3.5 6.5 8.5 6.5 8.5-6.5" />
+              </svg>
+              <span className="link-underline text-[0.625rem] font-semibold uppercase tracking-[0.2em]">
+                strada.collection50@gmail.com
+              </span>
             </a>
           </li>
         </ul>

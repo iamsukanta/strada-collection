@@ -37,7 +37,7 @@ export default function Sourcing() {
               alt="Curated garments hanging on a boutique rack"
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-cover grayscale transition-transform duration-700 ease-out hover:scale-105"
+              className="object-cover grayscale transition-[transform,filter] duration-700 ease-out hover:scale-105 hover:grayscale-0"
             />
           </motion.div>
 

@@ -16,7 +16,7 @@ const iconProps = {
   strokeWidth: 1.5,
   strokeLinecap: "round",
   strokeLinejoin: "round",
-  className: "h-9 w-9",
+  className: "h-14 w-14",
   "aria-hidden": true,
 } as const;
 
@@ -93,16 +93,14 @@ export default function About() {
         >
           {CATEGORIES.map((category, i) => (
             <motion.li key={category.label} variants={fadeUp}>
-              <div className="group flex h-full min-h-44 flex-col justify-between border border-line p-6 transition-colors duration-300 hover:border-ink hover:bg-ink">
-                <div className="flex items-start justify-between">
-                  <span className="text-ink transition-colors duration-300 group-hover:text-paper">
-                    {category.icon}
-                  </span>
-                  <span className="eyebrow text-ash">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                </div>
-                <span className="eyebrow mt-10 text-ink transition-colors duration-300 group-hover:text-paper">
+              <div className="group relative flex h-full min-h-52 flex-col items-center justify-center gap-6 border border-line p-6 text-center transition-colors duration-300 hover:border-ink hover:bg-ink">
+                <span className="eyebrow absolute right-4 top-4 text-ash">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-ink transition-colors duration-300 group-hover:text-paper">
+                  {category.icon}
+                </span>
+                <span className="eyebrow text-ink transition-colors duration-300 group-hover:text-paper">
                   {category.label}
                 </span>
               </div>
